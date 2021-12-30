@@ -1,0 +1,27 @@
+<h1>Insert artist data</h1>
+
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :artistic_name %><br>
+    <%= form.text_field :artistic_name %>
+  </div>
+
+  <div>
+    <%= form.label :age %><br>
+    <%= form.text_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :picture %><br>
+    <%= form.text_area :picture %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

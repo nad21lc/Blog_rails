@@ -1,0 +1,10 @@
+<h1>Artist</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+        <%= link_to article.artistic_name, article %>
+    </li>
+  <% end %>
+</ul>
+
